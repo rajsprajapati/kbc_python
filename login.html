@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+          padding: 0%;
+          margin: 0%;
+          /* font-family: 'Courier New', Courier, monospace;   */
+          font-family: sans-serif;
+        }
+         body{
+            background: url('./bg.jpg') no-repeat;
+            background-size: cover;
+         }
+        .login-form {
+            width: 300px;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+
+            filter: blur(40%);
+            text-align: center;
+        }
+        .login-form h2{
+            font-size: 40px;
+            color: aliceblue;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 40px 0;
+            
+        }
+        #username{
+            font-size: 16px;
+            width: 100%;
+            padding: 15px 10px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        #password{
+            font-size: 16px;
+            width: 100%;
+            padding: 15px 10px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .login-button{
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 73%;
+            padding: 10px 15px;
+            width: 100px;
+            border-radius: 5px;
+            border: 0;
+            text-align: center;
+        }
+        
+        .login-button:hover{
+            background-color: rgb(32, 188, 32);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            
+            <input type="text" name="username" id="username" placeholder="Username">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+            <input type="submit" class="login-button" value="Login">
+        </form>
+    </div>
+</body>
+</html>
